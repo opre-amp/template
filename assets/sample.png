@@ -1,0 +1,12 @@
+--2020-03-04 00:24:19--  https://rt.wiki.kernel.org//skins/common/images-rt/wiki.png
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving rt.wiki.kernel.org (rt.wiki.kernel.org)... 52.34.82.83, 52.36.61.171, 54.68.18.195
+Connecting to rt.wiki.kernel.org (rt.wiki.kernel.org)|52.34.82.83|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10874 (11K) [image/png]
+Saving to: 'wiki.png'
+
+     0K ..........                                            100%  308M=0s
+
+2020-03-04 00:24:20 (308 MB/s) - 'wiki.png' saved [10874/10874]
+

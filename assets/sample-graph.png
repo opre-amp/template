@@ -1,0 +1,13 @@
+--2020-03-04 00:28:53--  https://i.imgur.com/aN59ZS1.png
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving i.imgur.com (i.imgur.com)... 151.101.112.193
+Connecting to i.imgur.com (i.imgur.com)|151.101.112.193|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 76302 (75K) [image/png]
+Saving to: 'aN59ZS1.png'
+
+     0K .......... .......... .......... .......... .......... 67%  715K 0s
+    50K .......... .......... ....                            100% 6.50M=0.07s
+
+2020-03-04 00:28:53 (1012 KB/s) - 'aN59ZS1.png' saved [76302/76302]
+
