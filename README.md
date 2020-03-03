@@ -124,6 +124,8 @@ Answer
 
 ### Results
 
+_It is not necessary to include a graph at each step of every measurement. Include only those where the values are either unexpected, or there is a certain explanation for what we are seeing!_
+
 **Normal kernel, no stress**
 
 * min:
@@ -233,3 +235,24 @@ Graph:
 Graph:
 
 ![Sample graph](assets/sample-graph.png)
+
+---
+
+# Mini-OHV
+Ez már nem része az értékelendő munkának.
+
+## Miben lehetne jobb a labor?
+
+Válasz néhány szóban
+
+## Mi tetszett a laborban?
+
+Válasz néhány szóban
+
+## Mi nem tetszett a laborban?
+
+Válasz néhány szóban
+
+## Mennyire érzed hasznosnak a labor anyagát?
+
+Válasz néhány szóban
