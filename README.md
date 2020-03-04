@@ -90,6 +90,22 @@ Design decisions if necessary
 
 Summary of the development
 
+**Using ${CROSS_BARE}nm metal.elf determine where each of the functions are placed by the linker. What is the entry point’s address?**
+
+Answer
+
+**What is the SET address of the 3rd core’s 3rd mailbox?**
+
+Answer
+
+**What is the CLEAR address of the 3rd core’s 3rd mailbox?**
+
+Answer
+
+**Which is readable?**
+
+Answer
+
 ## Kernel Modules
 
 **How long was the time difference between two ‘printk’ statements?**
