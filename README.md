@@ -44,7 +44,7 @@ Answer
 
 Answer
 
-**What do the existing parameters mean in the boot.cmdfile?**
+**What do the existing parameters mean in the boot.cmd file?**
 
 Answer
 
@@ -54,7 +54,7 @@ Answer
 
 Answer
 
-**Where can we reach it from software running withoutan OS?**
+**Where can we reach it from software running without an OS?**
 
 Answer
 
@@ -62,11 +62,11 @@ Answer
 
 Answer
 
-**Which register (name and busaddress) is responsible for selecting the GPIO function of pins #14, #15 and #16? Which bits?**
+**Which register (name and bus address) is responsible for selecting the GPIO function of pins #14, #15 and #16? Which bits?**
 
 Answer
 
-**Which registers are the corresponding SET, CLEAR and LEVEL registers (name and busaddress)?**
+**Which registers are the corresponding SET, CLEAR and LEVEL registers (name and bus address)?**
 
 Answer
 
