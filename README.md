@@ -139,108 +139,93 @@ _It is not necessary to include a graph at each step of every measurement. Inclu
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **Normal kernel, with stress**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **Normal kernel, with stress and low priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **Normal kernel, with stress and high priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **Normal kernel, with stress running in a kernel module**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **RT kernel, with stress and low RT priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **RT kernel, with stress and high RT priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **RT kernel, with low RT stress and high RT priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **RT kernel, with high RT stress and low RT priority**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **AMP system, no stress**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
-
-![Sample graph](assets/sample-graph.png)
 
 **AMP system, with high RT stress**
 
 * min:
 * max:
 * avg:
+* var:
 
-Graph:
+**Summary**
+
+Summarize the latencies in a histogram-type diagram. 
+
+Diagram:
 
 ![Sample graph](assets/sample-graph.png)
 
