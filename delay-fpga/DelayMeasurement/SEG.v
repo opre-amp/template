@@ -2,6 +2,7 @@
 // source: https://www.mit.bme.hu/oktatas/targyak/vimiaa02/laborok-anyaga
 
 module SEG(
+	 input en,
     input      [3:0] digit,
     output     [7:0] seg
     );
@@ -31,6 +32,6 @@ module SEG(
 			endcase
 		end 
 	 
-	assign seg = {decp,segment};
+	assign seg = en ? {decp,segment} : 0;
 
 endmodule

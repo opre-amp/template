@@ -52,7 +52,7 @@ module DISPL_4DIG(
 		end
 	end
 	
-	SEG segment(.digit(digit), .seg(seg));
+	SEG segment(.en(en), .digit(digit), .seg(seg));
 
 
 endmodule

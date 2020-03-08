@@ -13,30 +13,31 @@ module TIME(
 	reg [15:0] counter = 0;
 	reg [15:0] start = 0;
 	
-	reg last_t_end = 1;
 	reg [15:0] out_reg = 16'hDEAD;
 	assign number = out_reg;
-	
-	reg [2:0] ready_counter = 0;
+
 	reg ready_source = 0;
 	assign ready = ready_source;
+	
+	reg last_t_start = 1;
+	reg last_t_end = 1;
 	
 	always @(posedge clk)
 	begin
 		counter = counter + 1;
-		if (last_t_end & ~t_end)
+		
+		if (~last_t_end & t_end & (counter - start < 16'h8000))
 		begin
-			ready_source = 1;
-			out_reg = counter - start;
-			ready_counter = 1;
+			ready_source <= 1;
+			out_reg <= counter - start;
 		end
-		if(ready_counter == 0) ready_source = 0;
-		else ready_counter = ready_counter + 1;
+		else ready_source <= 0;
+		
+		if (~last_t_start & t_start) start <= counter;
+		
 		last_t_end <= t_end;
+		last_t_start <= t_start;
 	end
-
-	always @(posedge t_start)
-		start <= counter;
 	
 
 endmodule
