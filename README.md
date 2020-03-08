@@ -246,6 +246,14 @@ Válasz néhány szóban
 
 Válasz néhány szóban
 
+## Mi volt túlmagyarázva (miből kellett volna kevesebb iránymutatás)?
+
+Válasz néhány szóban
+
+## Miből kellett volna több iránymutatás?
+
+Válasz néhány szóban
+
 ## Mennyire érzed hasznosnak a labor anyagát?
 
 Válasz néhány szóban
