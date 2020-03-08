@@ -1,11 +1,37 @@
-metal.img: metal.elf
-	${CROSS_BARE}objcopy metal.elf -O binary metal.img
+PREFIX = ../../opre-amp-solution/toolchain/gcc-arm-9.2-2019.12-x86_64-arm-none-eabi/bin/arm-none-eabi-
 
-metal.elf: rpi.o start.o
-	${CROSS_BARE}ld -Ttext 0x20000000 -nostartfiles -Trpi.x  start.o rpi.o -o metal.elf
+ARCH = -march=armv8.2-a -mtune=cortex-a53 -marm -mfpu=neon-fp-armv8 -mfloat-abi=hard # RPI 3B+
+#ARCH = -mfloat-abi=hard -marm -mcpu=cortex-a7 -mfpu=neon-vfpv4	  # RPI 2B
 
-rpi.o: rpi.c
-	${CROSS_BARE}gcc -c rpi.c -o rpi.o
+CFLAGS = -Wall -Werror -O2  -ffreestanding -fno-exceptions -nostdinc -nostdlib -nostartfiles
+CFLAGS += $(ARCH)
 
-start.o: start.S
-	${CROSS_BARE}as start.S -o start.o
+LDFLAGS = -Ttext 0x20000000 -nostartfiles -Trpi.x
+
+TARGET = metal
+
+SRCS = $(wildcard *.c)
+OBJS = $(SRCS:.c=.o)
+
+CC	= $(PREFIX)gcc
+LD	= $(PREFIX)ld
+
+
+all: $(TARGET).img
+
+%.o: %.s
+	$(CC) $(ARCH) -c -o $@ $<
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+
+$(TARGET).img: start.o $(OBJS) rpi.x
+	$(LD) $(LDFLAGS) -o $(TARGET).elf  start.o $(OBJS)
+	$(PREFIX)objcopy $(TARGET).elf -O binary $(TARGET).img
+	$(ECHO) $(PREFIX)nm metal.elf
+
+clean :
+	-rm *.o
+	-rm *.elf
+	-rm *.img
