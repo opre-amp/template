@@ -1,5 +1,12 @@
 .globl _start
 _start:
+  ldr r0,=0x30000004
+  ldr r1,=0xDEADBEEF
+  ldr r2,[r0]
+  cmp r1,r2
+  beq start
+  str r1,[r0]
+
 // ---------------------------------------------------------------------- Switch to Supervisor mode
   mrs r0, cpsr
   bic r0, r0, #0x1F     // clear mode bits
@@ -34,7 +41,8 @@ _start:
   orr r2, #0x1000    // Instruction cache
   mcr p15,0,r2,c1,c0,0
 
-  mov sp, #0x30000000
+  ldr sp,=0x30000000
+start:
   ldr r0,=0xDEADBEEF
   ldr r1,=0x400000bc
   str r0,[r1]

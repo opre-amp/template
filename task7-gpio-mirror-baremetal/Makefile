@@ -1,7 +1,7 @@
 PREFIX = ../../opre-amp-solution/toolchain/gcc-arm-9.2-2019.12-x86_64-arm-none-eabi/bin/arm-none-eabi-
 
-ARCH = -march=armv8.2-a -mtune=cortex-a53 -marm -mfpu=neon-fp-armv8 -mfloat-abi=hard # RPI 3B+
-#ARCH = -mfloat-abi=hard -marm -mcpu=cortex-a7 -mfpu=neon-vfpv4	  # RPI 2B
+#ARCH = -march=armv8.2-a -mtune=cortex-a53 -marm -mfpu=neon-fp-armv8 -mfloat-abi=hard # RPI 3B+
+ARCH = -mfloat-abi=hard -marm -mcpu=cortex-a7 -mfpu=neon-vfpv4	  # RPI 2B
 
 CFLAGS = -Wall -Werror -O2  -ffreestanding -fno-exceptions -nostdinc -nostdlib -nostartfiles
 CFLAGS += $(ARCH)

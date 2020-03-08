@@ -1,5 +1,5 @@
-// #define RPI2B
-#define RPI3BPLUS
+#define RPI2B
+//#define RPI3BPLUS
 
 #define IOBASE   0x3f000000
 #define GPIO     0x200000
@@ -34,6 +34,7 @@ int main()
     volatile unsigned int *cfg = (unsigned int *)(IOBASE + GPIO + CONFIG);
 
     *cfg |= (1 << CFG_BIT); // set as output (only affects that bit)
+
     for(int i = 0; i < 10; ++i) // flash the led 10 times
     {
         *set |= (1 << DATA_BIT);    // LED ON
