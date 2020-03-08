@@ -40,7 +40,7 @@ Answer
 
 Answer
 
-**Which parameter can be used to limit the RAM usage of the system to 512M?**
+**The mem=nn\[KMG\] parameter can be used to limit the RAM usage of the system. What is KMG, and how to set it to 512 Megabytes?**
 
 Answer
 
@@ -72,8 +72,6 @@ Answer
 
 ### Task 1
 
-Code path: \<path\>
-
 Short specification of the program
 
 Design decisions if necessary 
@@ -81,8 +79,6 @@ Design decisions if necessary
 Summary of the development
 
 ### Task 7
-
-Code path: \<path\>
 
 Short specification of the program
 
@@ -114,8 +110,6 @@ Answer
 
 ### Task 2
 
-Code path: \<path\>
-
 Short specification of the program
 
 Design decisions if necessary 
@@ -123,8 +117,6 @@ Design decisions if necessary
 Summary of the development
 
 ### Task 8
-
-Code path: \<path\>
 
 Short specification of the program
 
@@ -134,7 +126,7 @@ Summary of the development
 
 ## Latency Measurements
 
-**How long is one cycleof the fpga in (nano)seconds?**
+**How long is one cycle of the fpga in (nano)seconds?**
 
 Answer
 
