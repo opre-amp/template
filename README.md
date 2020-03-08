@@ -132,8 +132,6 @@ Answer
 
 ### Results
 
-_It is not necessary to include a graph at each step of every measurement. Include only those where the values are either unexpected, or there is a certain explanation for what we are seeing!_
-
 **Normal kernel, no stress**
 
 * min:
